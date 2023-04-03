@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import { Sidebar } from '../components/Sidebar';
+import { Sidebar } from '../../components/Sidebar';
+import { Container } from './style';
 
 export function DefaultLayout() {
   return (
-    <div>
+    <Container>
       <Sidebar />
       <Outlet />
-    </div>
+    </Container>
   )
 }
