@@ -14,7 +14,7 @@ export function ListYearsWithMulpleWinners(){
     fetchData();
   },[])
 
-  const headName = ['Year', 'Name']
+  const headName = ['Year', 'Win Count']
 
   return (
     <TableContainer>

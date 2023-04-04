@@ -15,7 +15,6 @@ export function MovieByYear(){
    setYear('')
   }
 
- console.log(movie)
   return (
     <TableContainer>
       <h2>List movie winnerrs by years</h2>
