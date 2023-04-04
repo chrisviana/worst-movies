@@ -21,6 +21,7 @@ export const InfoTable = styled.table`
     padding: 0.5rem;
     text-align: left;
     border: 1px solid #dddddd;
+    width: 100px;
   }
 
   td {
