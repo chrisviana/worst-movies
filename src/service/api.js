@@ -1,6 +1,14 @@
 import axios from "axios";
 
-export const getMovieData = () => {}
+export const getMovieData = (year, winner) => {
+  const params = {
+    page: 0,
+    size: 300,
+    year: year,
+    winner: winner
+}
+return axios.get(`https://tools.texoit.com/backend-java/api/movies?`, { params })
+}
  
 export const getyearsWithMoreThanOneWinner = () => {
  return axios.get('https://tools.texoit.com/backend-java/api/movies?projection=years-with-multiple-winners')
