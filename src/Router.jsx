@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { Dashboard } from './pages/Dashboard'
 import { List } from './pages/List'
-import { DefaultLayout } from './layouts/DefaultLayout'
+import { DefaultLayout } from './layouts/DafaultLayout'
 export function Router() {
   return (
     <Routes>
