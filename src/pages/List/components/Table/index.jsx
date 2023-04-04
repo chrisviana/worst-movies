@@ -3,7 +3,7 @@ import { InfoTable, Search, TableContainer } from './style';
 import { Pagination } from '../Pagination';
 
 
-const Table = ({ data, handleSarchByYear, handleSarchWinner }) => {
+export function Table ({ data, handleSarchByYear, handleSarchWinner }) {
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 15;
@@ -64,5 +64,3 @@ const Table = ({ data, handleSarchByYear, handleSarchWinner }) => {
     </TableContainer>
   );
 };
-
-export default Table;

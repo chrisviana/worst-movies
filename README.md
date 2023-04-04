@@ -33,7 +33,7 @@ Fui usado o gitflow para o desenvolvimento do projeto. Onde para as branchs task
 ## Iniciar projeto
   - Para iniciar o projeto deve se clonar o projeto
   - Apos clonar o projeto deve ir a pasta do mesmo e instalar as depencencias com `npm install`
-  - O projeto pode ser iniciado com `npm run start`
+  - O projeto pode ser iniciado com `npm start`
 
 ## Teste unitarios
 Foram criados os teste para as seguintes requisções: <br> 

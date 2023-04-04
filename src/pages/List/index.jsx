@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
-import Table from './components/Table';
+import { Table } from './components/Table';
 import { getMovieData } from '../../service/api';
-import { Pagination } from './components/Pagination';
-
 
 export function List() {
   const [listMovie, setListMovie] = useState([{}])
@@ -39,8 +37,6 @@ export function List() {
   function handleSarchWinner(event){
     setWinner(event.target.value);
   }
-
-  console.log(winner)
 
   return (
     <Table 
