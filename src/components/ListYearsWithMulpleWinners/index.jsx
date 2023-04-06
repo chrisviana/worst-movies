@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getyearsWithMoreThanOneWinner } from '../service/api'
-import { TableContainer, InfoTable } from '../styles/global'
+import { getyearsWithMoreThanOneWinner } from '../../service/api'
+import { TableContainer, InfoTable } from '../../styles/global'
 
 export function ListYearsWithMulpleWinners(){
   const [yearsWinners, setYearsWinners] = useState([])
