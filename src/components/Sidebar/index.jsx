@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-import { Container, Content } from './style';
+import { NavLink } from 'react-router-dom'
+import { Container, Content } from './style'
 
 export function Sidebar(){
   return (

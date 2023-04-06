@@ -1,17 +1,17 @@
-import { MagnifyingGlass } from '@phosphor-icons/react';
-import { InfoTable, TableContainer } from '../../styles/global';
-import { ContentSearch } from './style';
-import { getFilmByYear } from '../../service/api';
-import { useState } from 'react';
+import { MagnifyingGlass } from '@phosphor-icons/react' 
+import { InfoTable, TableContainer } from '../../styles/global' 
+import { ContentSearch } from './style' 
+import { getFilmByYear } from '../../service/api' 
+import { useState } from 'react' 
 
 export function MovieByYear(){
 
-  const [year, setYear] = useState('');
-  const [movie, setMovie] = useState();
+  const [year, setYear] = useState('')
+  const [movie, setMovie] = useState()
 
   async function searchMovie(){
-    const result = await getFilmByYear(year);
-   setMovie(result.data);
+    const result = await getFilmByYear(year) 
+   setMovie(result.data) 
    setYear('')
   }
 

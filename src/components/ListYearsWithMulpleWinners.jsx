@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
-import { getyearsWithMoreThanOneWinner } from '../service/api';
-import { TableContainer, InfoTable } from '../styles/global';
+import { useEffect, useState } from 'react'
+import { getyearsWithMoreThanOneWinner } from '../service/api'
+import { TableContainer, InfoTable } from '../styles/global'
 
 export function ListYearsWithMulpleWinners(){
   const [yearsWinners, setYearsWinners] = useState([])
 
   useEffect(() => {
     async function fetchData() {
-      const result = await getyearsWithMoreThanOneWinner();
+      const result = await getyearsWithMoreThanOneWinner()
       setYearsWinners(result.data.years)
     }
 
-    fetchData();
+    fetchData()
   },[])
 
   const headName = ['Year', 'Win Count']

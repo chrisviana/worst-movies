@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react';
-import { getStudios } from '../service/api';
-import { TableContainer, InfoTable } from '../styles/global';
+import { useEffect, useState } from 'react'
+import { getStudios } from '../service/api'
+import { TableContainer, InfoTable } from '../styles/global'
 
 export function TopThreeStudios(){
   const [studios, setStudios] = useState([])
 
   useEffect(() => {
     async function fetchData() {
-      const result = await getStudios();
-      const sortedStudios = result.data.studios.sort((a, b) => b.winCount - a.winCount);
-      const topThreeStudios = sortedStudios.slice(0, 3);
+      const result = await getStudios()
+      const sortedStudios = result.data.studios.sort((a, b) => b.winCount - a.winCount)
+      const topThreeStudios = sortedStudios.slice(0, 3)
 
      setStudios(topThreeStudios)
     }
 
-    fetchData();
+    fetchData()
   },[])
 
   const headName = ['Name', 'Win Count']
