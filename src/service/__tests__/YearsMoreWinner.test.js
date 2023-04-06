@@ -1,4 +1,4 @@
-import { getyearsWithMoreThanOneWinner } from './api';
+import { getyearsWithMoreThanOneWinner } from '../api';
 
 test('Valida se as chaves do objeto existem na requisão: Anos com mais de um vencedor', async () => {
   const result = await getyearsWithMoreThanOneWinner()

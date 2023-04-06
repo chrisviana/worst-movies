@@ -7,7 +7,7 @@ import { useState } from 'react'
 export function MovieByYear(){
 
   const [year, setYear] = useState('')
-  const [movie, setMovie] = useState()
+  const [movie, setMovie] = useState([{}])
 
   async function searchMovie(){
     const result = await getFilmByYear(year) 

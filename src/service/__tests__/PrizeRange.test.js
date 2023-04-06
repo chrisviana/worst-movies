@@ -1,4 +1,4 @@
-import { getPrizeRange } from './api';
+import { getPrizeRange } from '../api';
 
 test('Valida se as chaves do objeto existem na requição: Intervalo de prêmios', async () => {
   const result = await getPrizeRange();

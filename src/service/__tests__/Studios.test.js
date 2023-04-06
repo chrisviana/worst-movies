@@ -1,4 +1,4 @@
-import { getStudios } from './api';
+const { getStudios } = require('../api');
 
 test('Valida se as chaves do objeto existem na requição: Estudios', async () => {
   const result = await getStudios();
