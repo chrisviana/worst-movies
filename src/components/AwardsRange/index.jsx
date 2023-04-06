@@ -1,21 +1,21 @@
-import { useEffect, useState } from 'react';
-import { TableContainer } from '../../styles/global';
-import { Table } from './components/Table';
-import { getPrizeRange } from '../../service/api';
+import { useEffect, useState } from 'react'
+import { TableContainer } from '../../styles/global'
+import { Table } from './components/Table'
+import { getPrizeRange } from '../../service/api'
 
 export function AwardsRange() {
 
-  const [maximum, setMaximum] = useState([]);
-  const [minimum, setMinimum] = useState([]);
+  const [maximum, setMaximum] = useState([])
+  const [minimum, setMinimum] = useState([])
 
   useEffect(() => {
     async function fetchData() {
-      const result = await getPrizeRange();
+      const result = await getPrizeRange()
       setMaximum(result.data.max)
       setMinimum(result.data.min)
     }
 
-    fetchData();
+    fetchData()
   },[])
 
 

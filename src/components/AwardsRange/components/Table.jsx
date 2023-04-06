@@ -1,5 +1,5 @@
-import { InfoTable } from '../../../styles/global';
-import { SubTitle } from './style';
+import { InfoTable } from '../../../styles/global'
+import { SubTitle } from './style'
 
 export function Table({ subtitle, infos }) {
 
@@ -11,7 +11,7 @@ export function Table({ subtitle, infos }) {
           <tr>
             <th>Producer</th>
             <th>Interval</th>
-            <th>Previous</th>
+            <th>Previous Year</th>
             <th>Following Year</th>
           </tr>
         </thead>
