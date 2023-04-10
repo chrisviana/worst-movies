@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getStudios } from '../service/api'
-import { TableContainer, InfoTable } from '../styles/global'
+import { getStudios } from '../../service/api'
+import { TableContainer, InfoTable } from '../../styles/global'
 
 export function TopThreeStudios(){
   const [studios, setStudios] = useState([])

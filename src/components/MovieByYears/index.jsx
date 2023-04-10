@@ -7,7 +7,7 @@ import { useState } from 'react'
 export function MovieByYear(){
 
   const [year, setYear] = useState('')
-  const [movie, setMovie] = useState()
+  const [movie, setMovie] = useState([])
 
   async function searchMovie(){
     const result = await getFilmByYear(year) 
@@ -17,7 +17,7 @@ export function MovieByYear(){
 
   return (
     <TableContainer>
-      <h2>List movie winnerrs by years</h2>
+      <h2>List movie winners by years</h2>
       <ContentSearch>
         <input
           type="number" 
@@ -25,7 +25,7 @@ export function MovieByYear(){
           value={year}
           onChange={(event) => setYear(event.target.value)}
         />
-        <button onClick={searchMovie}>
+        <button onClick={searchMovie} data-testid="search-button">
           <MagnifyingGlass size={20} color="#fff" weight="bold" />
         </button>
       </ContentSearch>

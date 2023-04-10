@@ -3,7 +3,7 @@ import { Table } from './components/Table'
 import { getMovieData } from '../../service/api'
 
 export function List() {
-  const [listMovie, setListMovie] = useState([{}])
+  const [listMovie, setListMovie] = useState([])
   const [year, setYear] = useState()
   const [winner, setWinner] = useState()
   const [currentPage, setCurrentPage] = useState(1)
