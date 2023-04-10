@@ -13,9 +13,10 @@ O projeto tem por objeto mostrar um dashboard e uma listagem de filmes onde ter�
     - Year
     - Title
     - Winner
-  - Sendo que Year e Winner podem ser utilizado como filtros. 
+  - Sendo que Year e Winner podem ser utilizado como filtros.
 
 ### Imagens e Gif da aplicação:
+
 ![Screenshot_3](https://user-images.githubusercontent.com/19362661/229874587-b9361adc-3e3d-4935-a07c-9384e9e27a51.png)
 ![Screenshot_4](https://user-images.githubusercontent.com/19362661/229874589-9a4c2c57-6daa-40c6-bf82-9a21fc7ed6c6.png)
 ![Screenshot_5](https://user-images.githubusercontent.com/19362661/229874663-474b810f-0e0e-40d4-922b-9aa36a90062c.png)
@@ -25,22 +26,31 @@ O projeto tem por objeto mostrar um dashboard e uma listagem de filmes onde ter�
 ![Aplicação](https://user-images.githubusercontent.com/19362661/229874727-66bf5405-a70e-48b0-9d48-06f39cdcada9.gif)
 
 ## Processo de desenvolvimento
+
 Fui usado o gitflow para o desenvolvimento do projeto. Onde para as branchs task001 e task002, foi configurado a ferramenta JEST para para o teste e já criado o teste de API e para segunda banch foi configurado o layout default utlizando React Router Dom.
 
 - Foi criado as branchs `features` para o desenvolvimento das telas de Dashboard e List
 - As branchs `fix` foram utilizadas para realizar correções diversas.
 
+### Padronizaão
+
+- Para cada componente é criado uma pasta dentro de components com o nome do componente.
+  - Dentro da pasta é criado um arquivo `index.jsx` para criação do componente e um `style.js` para personalização do componente caso exista.
+- Caso o componente que foi criado na pasta components tenha um componente especifico dele é cirado dentro da pasta do componete uma pasta chamada de `components` pois esse componente pertence a somente o componente pai.
+
 ## Iniciar projeto
-  - Para iniciar o projeto deve se clonar o projeto
-  - Apos clonar o projeto deve ir a pasta do mesmo e instalar as depencencias com `npm install`
-  - O projeto pode ser iniciado com `npm start`
+
+- Para iniciar o projeto deve se clonar o projeto
+- Apos clonar o projeto deve ir a pasta do mesmo e instalar as depencencias com `npm install`
+- O projeto pode ser iniciado com `npm start`
 
 ## Teste unitarios
-Foram criados os teste para as seguintes requisções: <br> 
-- Anos com mais de um vencedor
-- Estúdios
-- Intervalo de prêmios
-- Filme por ano
+
+Para manter um padronização de arquivos de teste foi criado a pasta `__tests__` em components e page onde foi criado os arquivos com o mesmo nome da pagina ou componente seguindo te `.test.jsx` ou `.test.jsx`
+
+- Foram criados os testes para as requisições da API.
+- Foram criado os testes para os compoentes e as paginas.
 
 ### Iniciar Teste
+
 - Para executar os teste de API deverá executar na raiz do projeto o seguinte comando: `npm test`.

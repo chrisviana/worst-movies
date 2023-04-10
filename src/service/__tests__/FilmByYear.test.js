@@ -1,4 +1,4 @@
-import { getFilmByYear } from './api.js'
+import { getFilmByYear } from '../api.js'
 
 test('Valida se as chaves do objeto existem na requição: Filme por ano', async () => {
   const result = await getFilmByYear(2018);

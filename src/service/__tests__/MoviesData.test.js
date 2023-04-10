@@ -1,4 +1,4 @@
-import { getMovieData } from './api';
+import { getMovieData } from '../api';
 
 test('Valida se as chaves do objeto existem na requição: Dados do Filme', async () => {
   const result = await getMovieData(2013, true);
