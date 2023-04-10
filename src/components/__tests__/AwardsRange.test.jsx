@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, waitFor } from '@testing-library/react'
 import { AwardsRange } from '../AwardsRange'
-import "@testing-library/jest-dom"
+import '@testing-library/jest-dom'
 
 jest.mock('../../service/api', () => ({
   getPrizeRange: jest.fn(() => ({
@@ -16,7 +16,7 @@ jest.mock('../../service/api', () => ({
   })),
 }));
 
-describe('Component AwardsRange ', () => {
+describe('Componente AwardsRange ', () => {
   test('Verifica  o AwardsRange está renderizando corramente', async () => {
     const { getByText } = render(<AwardsRange />)
   

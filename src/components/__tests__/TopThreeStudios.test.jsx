@@ -1,7 +1,7 @@
 import React from 'react'
 import { render,  waitFor } from '@testing-library/react';
 import { TopThreeStudios } from '../TopThreeStudios';
-import "@testing-library/jest-dom"
+import '@testing-library/jest-dom'
 
 jest.mock('../../service/api', () => ({
   getStudios: jest.fn(() => ({
@@ -16,7 +16,7 @@ jest.mock('../../service/api', () => ({
 }));
 
 describe('Componente TopThreeStudios', () => {
-  it('Deve renderizar uma table com os três estudios', async () => {
+  test('Deve renderizar uma table com os três estudios', async () => {
     const { getByText, getAllByRole} = render(<TopThreeStudios />);
 
     expect(getByText('Top 3 studios with winners')).toBeInTheDocument();

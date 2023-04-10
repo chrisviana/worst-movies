@@ -32,10 +32,9 @@ export function Table ({ data, handleSarchByYear, handleSarchWinner,currentPage,
               <Search>
                 <span>Winner</span>
                 <select onChange={handleSarchWinner}>
-                  <option disabled selected>Yes/No</option>
+                  <option value="">Yes/No</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
-                  <option value="">All</option>
                 </select>
               </Search>
             </th>
