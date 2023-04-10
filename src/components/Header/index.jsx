@@ -1,11 +1,9 @@
-import { Container } from './style';
+import { Container } from "./style";
 
-export function Header(){
-  return (
-    <Container>
-      <span>
-        Front End React Test
-      </span>
-    </Container>
-  )
+export function Header() {
+	return (
+		<Container>
+			<span>Front End React Test</span>
+		</Container>
+	);
 }
