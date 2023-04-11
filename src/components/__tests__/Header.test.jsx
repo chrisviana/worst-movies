@@ -4,9 +4,9 @@ import { Header } from "../Header";
 import "@testing-library/jest-dom";
 
 describe("Componente Header", () => {
-	test("Verifica se o Header está renderizando corramente", () => {
-		const { getByText } = render(<Header />);
+  test("Verifica se o Header está renderizando corramente", () => {
+    const { getByText } = render(<Header />);
 
-		expect(getByText("Front End React Test")).toBeInTheDocument();
-	});
+    expect(getByText("Front End React Test")).toBeInTheDocument();
+  });
 });

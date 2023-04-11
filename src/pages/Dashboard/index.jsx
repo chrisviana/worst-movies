@@ -5,12 +5,12 @@ import { TopThreeStudios } from "../../components/TopThreeStudios";
 import { Container } from "./style";
 
 export function Dashboard() {
-	return (
-		<Container>
-			<ListYearsWithMulpleWinners />
-			<TopThreeStudios />
-			<AwardsRange />
-			<MovieByYear />
-		</Container>
-	);
+  return (
+    <Container>
+      <ListYearsWithMulpleWinners />
+      <TopThreeStudios />
+      <AwardsRange />
+      <MovieByYear />
+    </Container>
+  );
 }

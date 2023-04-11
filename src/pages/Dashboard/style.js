@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
@@ -12,5 +12,5 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin: 1rem;
-  }  
-`
+  }
+`;

@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const TableContainer = styled.div`
   width: 100%;
@@ -8,7 +7,7 @@ export const TableContainer = styled.div`
   border: 1px solid #e5e5e5;
   box-shadow: 1px 1px #e5e5e5;
   padding: 1rem;
- `
+`;
 export const InfoTable = styled.table`
   width: 100%;
   border-collapse: collapse;
@@ -33,4 +32,4 @@ export const InfoTable = styled.table`
   tr:nth-child(2) {
     background-color: #e2e2e2;
   }
-`
+`;

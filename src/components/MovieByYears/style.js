@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const ContentSearch = styled.div`
   display: flex;
@@ -8,13 +7,13 @@ export const ContentSearch = styled.div`
   width: 100%;
   margin-top: 1.5rem;
   height: 35px;
-  
+
   input {
     width: 90%;
     border-radius: 4px;
     height: 100%;
     border: 1px solid #dddddd;
-    padding: 0.5rem
+    padding: 0.5rem;
   }
 
   button {
@@ -28,9 +27,9 @@ export const ContentSearch = styled.div`
     height: 100%;
   }
 
-  button:hover { 
+  button:hover {
     background-color: #0368ba;
     cursor: pointer;
     transition: background-color 0.2s;
   }
-`
+`;
