@@ -5,33 +5,33 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "@testing-library/jest-dom";
 
 describe("Componente Sidebar", () => {
-	test("Verifica se o sidebar está renderizando corramente com seus links", () => {
-		const { getByText } = render(
-			<Router>
-				<Sidebar />
-			</Router>
-		);
+  test("Verifica se o sidebar está renderizando corramente com seus links", () => {
+    const { getByText } = render(
+      <Router>
+        <Sidebar />
+      </Router>
+    );
 
-		const dashboardLink = getByText(/dashboard/i);
-		const listLink = getByText(/list/i);
+    const dashboardLink = getByText(/dashboard/i);
+    const listLink = getByText(/list/i);
 
-		expect(dashboardLink).toBeInTheDocument();
-		expect(listLink).toBeInTheDocument();
-	});
+    expect(dashboardLink).toBeInTheDocument();
+    expect(listLink).toBeInTheDocument();
+  });
 
-	test("Valida se ao clicar em um link a classe Active esta sendo adicionada", () => {
-		const { getByText } = render(
-			<Router>
-				<Sidebar />
-			</Router>
-		);
+  test("Valida se ao clicar em um link a classe Active esta sendo adicionada", () => {
+    const { getByText } = render(
+      <Router>
+        <Sidebar />
+      </Router>
+    );
 
-		const dashboardLink = getByText(/dashboard/i);
-		const listLink = getByText(/list/i);
+    const dashboardLink = getByText(/dashboard/i);
+    const listLink = getByText(/list/i);
 
-		fireEvent.click(listLink);
+    fireEvent.click(listLink);
 
-		expect(dashboardLink).not.toHaveClass("active");
-		expect(listLink).toHaveClass("active");
-	});
+    expect(dashboardLink).not.toHaveClass("active");
+    expect(listLink).toHaveClass("active");
+  });
 });

@@ -3,12 +3,12 @@ import { Dashboard } from "./pages/Dashboard";
 import { List } from "./pages/List";
 import { DefaultLayout } from "./layouts/DafaultLayout";
 export function Router() {
-	return (
-		<Routes>
-			<Route path="/" element={<DefaultLayout />}>
-				<Route path="/" element={<Dashboard />} />
-				<Route path="/list" element={<List />} />
-			</Route>
-		</Routes>
-	);
+  return (
+    <Routes>
+      <Route path="/" element={<DefaultLayout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/list" element={<List />} />
+      </Route>
+    </Routes>
+  );
 }

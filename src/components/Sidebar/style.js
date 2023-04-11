@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 25rem;
   background-color: #ededed;
   height: 100vh;
 
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     width: 100%;
     height: 6rem;
   }
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -26,4 +26,4 @@ export const Content = styled.div`
   a.active {
     color: #07b7f7;
   }
-`
+`;
