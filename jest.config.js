@@ -1,7 +1,7 @@
 module.exports = {
   // outras configurações...
   transform: {
-    "^.+\\.jsx?$": "babel-jest"
+    "^.+\\.jsx?$": "babel-jest",
   },
-  "testEnvironment": "jsdom"
+  testEnvironment: "jsdom",
 };

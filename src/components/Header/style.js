@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const Container = styled.header`
   background-color: #24292f;
@@ -12,4 +11,4 @@ export const Container = styled.header`
     display: block;
     padding-left: 3.5rem;
   }
-`
+`;
