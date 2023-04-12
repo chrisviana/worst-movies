@@ -54,3 +54,6 @@ Para manter um padronização de arquivos de teste foi criado a pasta `__tests__
 ### Iniciar Teste
 
 - Para executar os teste de API deverá executar na raiz do projeto o seguinte comando: `npm test`.
+
+![Screenshot_1](https://user-images.githubusercontent.com/19362661/231325682-02d3125d-d22c-4205-8376-6c822c3c2799.png)
+
