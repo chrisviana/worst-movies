@@ -18,6 +18,23 @@ export function Table({
     setCurrentPage(page);
   };
 
+  function verificarCheckboxSelecionado() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var checkboxSelecionado = null;
+  
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            checkboxSelecionado = checkbox;
+        }
+    });
+  
+    if (checkboxSelecionado) {
+        alert("Checkbox selecionado: " + checkboxSelecionado.id);
+    } else {
+        alert("Nenhum checkbox selecionado.");
+    }
+  }
+
   return (
     <TableContainer>
       <h2>List Movies</h2>
